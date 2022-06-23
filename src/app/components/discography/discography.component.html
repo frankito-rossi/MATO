@@ -1,0 +1,35 @@
+<section id="discography" class="discography">
+  <div class="bg">
+    <div class="text_disco">
+      <h1 class="discos">MUSICA</h1>
+    </div>
+
+    <div class="grid_singles" >
+      <div *ngFor='let mu of musica'>
+        <div class="musica_box">
+          <div>
+          <img class="img_album" src={{mu.image}} >
+          <h3>{{mu.name}}</h3>
+          </div>
+          <div class="youtube_spotify">
+            <div *ngIf='evaluate(mu.youtube)'>
+              <a href={{mu.urlyt}} target="_blank">
+                <div class="youtube">
+                  <img src="../../assets/youtube-icon.png">
+                </div>
+              </a>
+            </div>
+            <div *ngIf='evaluate(mu.spotify)'>
+              <a href={{mu.urlsp}} target="_blank">
+                <div class="spotify">
+                  <img src="../../assets/spotify-icon.png">
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

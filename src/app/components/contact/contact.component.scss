@@ -1,0 +1,144 @@
+.section_contact {
+  margin-top: 200vh;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(28,0,50);
+  background: linear-gradient(90deg, rgba(28,0,50,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 60%, rgba(28,0,50,1) 100%);
+}
+
+.contact_grid {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+.bg{
+  display: flex;
+  height: 100vh;
+}
+
+h1{
+  top: 5vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  position: absolute;
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 10vw;
+  letter-spacing: 3vw;
+  text-shadow: 2px 2px 2rem black;
+}
+
+.right{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 25vh;
+  margin-left: 5vw;
+}
+
+.left{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 30vh;
+  margin-left: 5vw;
+}
+
+.icon img {
+  height: 10vh;
+}
+
+.icon{
+  text-align: center;
+}
+
+.icon h3{
+  margin-top: 2vh;
+}
+
+/* ============ MEDIA QUERIES (MEDIUM DIVICES) =========== */
+@media only screen and (max-width: 1000px) {
+  .section_contact {
+    margin-top: 200vh;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(28,0,50);
+    background: linear-gradient(90deg, rgba(28,0,50,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 60%, rgba(28,0,50,1) 100%);
+    }
+
+    .left{
+      position: absolute;
+      left: 60%;
+    }
+    .right{
+      position: absolute;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+  .section_contact {
+    margin-top: 250vh;
+    }
+}
+
+
+/* ============ MEDIA QUERIES (SMALL DIVICES) =========== */
+@media screen and  (max-width: 600px) {
+  .section_contact {
+    margin-top: 500vh;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image:  url("../../../assets/mato2.png");
+    background-position: center;
+  }
+
+  h1{
+    top: -2vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    position: absolute;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 10vw;
+    letter-spacing: 3vw;
+    text-shadow: 2px 2px 2rem black;
+  }
+
+  .contact_grid{
+    grid-template-columns: 1fr;
+    border: 2px solid white;
+    border-radius: 2rem;
+    margin-top: 10vh;
+    padding-top: -25vh;
+    margin-left:  2rem;
+    margin-right: 2rem;
+    background: rgba(28,0,50,0.5);
+  }
+
+  .bg{
+    width: 0px;
+    height: 0px;
+  }
+
+  .right{
+    position: inherit;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
+
+  .left{
+    position: inherit;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
+
+  .icon img {
+    height: 7vh;
+  }
+
+}

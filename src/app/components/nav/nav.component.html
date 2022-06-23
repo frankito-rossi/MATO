@@ -1,0 +1,21 @@
+<nav>
+  <a href="#"
+    (click)="setActiveNav('#')"
+    [ngClass]="{'active': state == '#'}"
+    >
+  <mat-icon>home</mat-icon>
+  </a>
+  <a href="#discography"
+    (click)="setActiveNav('#discography')"
+    [ngClass]="{'active': state == '#discography'}"
+    >
+  <mat-icon>album</mat-icon>
+  </a>
+  <a href="#contact"
+    (click)="setActiveNav('#contact')"
+    [ngClass]="{'active': state == '#contact'}"
+    >
+  <mat-icon>phone</mat-icon>
+  </a>
+
+</nav>

@@ -1,0 +1,248 @@
+.discography {
+  margin-top: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(31,0,41);
+  background: linear-gradient(90deg, rgba(31,0,41,1) 0%, rgba(5,3,66,1) 100%);
+}
+
+.bg{
+  height: 95vh;
+  background-image: url(https://1.bp.blogspot.com/-3QyHibOG-Cg/UA_AjiPAZ2I/AAAAAAAAXI4/MNV0z1IeCiw/s1600/fractal+png+zoomgraf.blogspot+%282%29.png);
+  background-size: 30vh;
+}
+
+.text_disco{
+  background: #420057;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+h1{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 20vw;
+  letter-spacing: 3vw;
+  text-shadow: 2px 2px 2rem black;
+}
+
+.discos{
+  font-size: 3.2vw;
+  font-family: 'BIZ UDPGothic', sans-serif;
+}
+
+.singles{
+  font-size: 5rem;
+  font-family: 'Almendra Display', cursive;
+}
+
+.disco_image {
+  margin-top: 35vh;
+  margin-left: 5vw;
+  transition: all 400ms ease;
+}
+
+img{
+  transition: all 400ms ease;
+}
+
+.disco_image img:hover{
+  transform: scale(1.2);
+}
+
+.grid_singles{
+  display: grid;
+  grid-template-columns:auto auto auto auto auto;
+  align-items: center;
+  justify-items: center;
+  margin-top: 10vh;
+  //border: 3px solid white;
+  border-radius: 2rem;
+  padding: 1rem 0 1rem 0;
+  margin: 1rem;
+  height: 84vh;
+}
+
+.musica_box{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background: rgba(66, 0, 87, 0.6);
+  border: 3px solid white;
+  border-radius: 2rem;
+  padding: 1rem;
+  overflow: hidden;
+  text-align: center;
+  height: 18vh;
+  width: 18vw;
+}
+
+.img_album {
+  margin-top: 1vh;
+  width:   9vmin;
+}
+
+.youtube_spotify{
+  margin-bottom: 3vh;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 1vh;
+  align-items: center;
+}
+
+.youtube:hover {
+  transform: scale(1.2);
+}
+
+.spotify:hover {
+  transform: scale(1.2);
+}
+
+.youtube{
+  background: red;
+  width: 5vw;
+  height: 5vh;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 2rem;
+ }
+
+.spotify {
+  background: green;
+  width: 5vw;
+  height: 5vh;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 2rem;
+}
+
+.youtube_spotify img {
+  width: 2vw;
+}
+
+@media screen and (max-width: 810px) {
+  .discography {
+    height: 150vh;
+  }
+
+  .bg{
+    height: 150vh;
+  }
+
+  .grid_singles{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10vh;
+    //border: 3px solid white;
+    border-radius: 2rem;
+    padding: 1rem 0 1rem 0;
+    margin: 1rem;
+    height: 84vh;
+  }
+
+  .musica_box{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    background: rgba(66, 0, 87, 0.6);
+    border: 3px solid white;
+    border-radius: 2rem;
+    //padding: 1rem;
+    margin: 1rem;
+    overflow: hidden;
+    text-align: center;
+    height: 18vh;
+    width: 25vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .discography {
+    margin-top: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 400vh;
+    background: rgb(31,0,41);
+    background: linear-gradient(90deg, rgba(31,0,41,1) 0%, rgba(5,3,66,1) 100%);
+  }
+
+  .bg{
+    height: 395vh;
+    background-image: url(https://1.bp.blogspot.com/-3QyHibOG-Cg/UA_AjiPAZ2I/AAAAAAAAXI4/MNV0z1IeCiw/s1600/fractal+png+zoomgraf.blogspot+%282%29.png);
+    background-size: 30vh;
+  }
+
+  h1{
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 20vw;
+    letter-spacing: 3vw;
+    text-shadow: 2px 2px 2rem black;
+  }
+
+  .grid_singles{
+    display: grid;
+    grid-template-columns:auto;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10vh;
+    //border: 3px solid white;
+    border-radius: 2rem;
+    padding: 1rem 0 1rem 0;
+    margin: 1rem;
+    height: 84vh;
+  }
+
+  .musica_box{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    background: rgba(66, 0, 87, 0.6);
+    border: 3px solid white;
+    border-radius: 2rem;
+    //padding: 1rem;
+    margin: 1rem;
+    overflow: hidden;
+    text-align: center;
+    height: 18vh;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .youtube{
+    background: red;
+    width: 40vw;
+    height: 5vh;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 1rem;
+   }
+
+  .spotify {
+    background: green;
+    width: 40vw;
+    height: 5vh;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 1rem;
+  }
+
+  .youtube_spotify img {
+    width: 6vw;
+  }
+
+  .img_album {
+    margin-top: 1vh;
+    width:   9vmax;
+  }
+
+}
